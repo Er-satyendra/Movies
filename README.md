@@ -52,4 +52,4 @@ Follow these steps to get the development environment up and running:
 List of contributors who participated in this project:
 - Satyendra Singh Chouhan
 
-This setup guide will help you get started with the BLITZ Frontend CMS.
+This setup guide will help you get started with the Movies Frontend.
