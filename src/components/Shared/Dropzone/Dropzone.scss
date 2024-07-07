@@ -1,0 +1,18 @@
+.movie__dropzone {
+    border: 2px dashed var(--primary-text-color);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 0.825rem;
+    font-weight: 400;
+    background-color: var(--field-input-color);
+    cursor: pointer;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.movie__dropzone.active {
+    border-color: var(--primary-color);
+}

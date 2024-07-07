@@ -1,0 +1,32 @@
+.pagination {
+  gap: 1rem;
+  margin: 25vh 0;
+  margin-top: 3rem;
+  .page-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    .page-global {
+      color: #fff;
+      text-decoration: none;
+      width: 75px;
+      text-align: start;
+    }
+    .page-link {
+      height: 32px;
+      width: 32px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--card-background-color);
+      border: none;
+      color: var(--primary-text-color);
+
+      &.active{
+        background-color: var(--primary-button-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+$font-sizes: (
+  "fs10" 0.625rem,
+  "fs12" 0.725rem,
+  "fs14" 0.825rem,
+  "fs16" 1rem,
+  "fs18" 1.125rem,
+  "fs20" 1.25rem,
+  "fs24" 2.5rem,
+  "fs48" 3.125rem
+  "fs80" 5rem
+);
+
+$font-weights: (
+  "fw400" 400,
+  "fw500" 500,
+  "fw600" 600,
+  "fw700" 700,
+  "fw800" 800
+);
+
+@each $i in $font-weights {
+  .#{nth($i, 1)} {
+    font-weight: nth($i, 2) color!important;
+  }
+}
+
+@each $i in $font-sizes {
+  .#{nth($i, 1)} {
+    font-size: nth($i, 2) !important;
+  }
+}

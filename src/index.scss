@@ -1,0 +1,44 @@
+@import './assets/Styles/fonts.scss';
+
+:root{
+  --main-background-color: #093545;
+  --primary-text-color: #ffffff;
+  --field-input-color: #224957;
+  --primary-button-color: #2BD17E;
+  --card-background-color: #092C39;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background-color:  var(--main-background-color);
+  color: var(--primary-text-color);
+  background-image: url(./assets/Images/mainBgImg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  font-family: "Montserrat", sans-serif;;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.word-wrap{
+  word-break: break-all;
+}
+
+.error{
+  position: absolute;
+  left: 5px;
+}

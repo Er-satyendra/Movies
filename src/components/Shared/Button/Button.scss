@@ -1,0 +1,32 @@
+.primary-btn {
+  width: 100%;
+  background-color: var(--primary-button-color);
+  border: none;
+  padding: 15px;
+  gap: 5px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-text-color);
+
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+.secondary-btn {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  gap: 5px;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: transparent;
+  font-weight: 700;
+  color: var(--primary-text-color);
+
+  &:hover{
+    opacity: 0.7;
+  }
+}
