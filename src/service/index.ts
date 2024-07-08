@@ -15,6 +15,7 @@ axiosInstance.interceptors.request.use(
         const initialHeader = config.headers['Content-Type']
         const configCopy = { ...config }
         configCopy.headers['Content-Type'] = initialHeader || 'application/json'
+        configCopy.headers['x-vercel-protection-bypass'] = process.env.REACT_APP_VERCEL_KEY
         if (!configCopy.headers['authorization']) {
             const token = getStorage<string>('auth_config')
             if (token) configCopy.headers['Authorization'] = `Bearer ${token}`
