@@ -7,7 +7,7 @@ import { getErrors, logOut, showAlertMsg } from '../utilities';
 import { getStorage } from '../utilities/storage';
 
 const axiosInstance = axios.create({
-    baseURL: 'http://45.59.167.43:5353/api'
+    baseURL: process.env.REACT_APP_API_URL
 });
 
 axiosInstance.interceptors.request.use(
