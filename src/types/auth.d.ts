@@ -4,7 +4,6 @@ interface LoginProps {
     password: string
     rememberMe: boolean
 }
-
 interface RegistrationProps {
     name: string
     email: string

@@ -47,7 +47,7 @@ axiosInstance.interceptors.response.use(
 
 
 
-const mainApiService = async <T = any, R = any>({
+const mainApiService = async <T, R>({
     url,
     method,
     data,
