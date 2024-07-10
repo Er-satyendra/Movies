@@ -1,5 +1,4 @@
-interface MoviesListAPIResponse {
-    message: string,
+interface MoviesListAPIResponse extends ResponseWithMessageProps   {
     totalPages: number,
     currentPage: number,
     movies: MovieAPIResponseProps[]
@@ -32,18 +31,15 @@ interface MovieFormErrorProps {
 interface MovieListProps {
     movies: MovieAPIResponseProps[]
 }
-
 interface MovieCardProps {
     movie: MovieAPIResponseProps
 }
 
-interface MovieAPIResponseProps {
-    message: string,
+interface MovieAPIResponseProps extends ResponseWithMessageProps {
     movie: MovieAPIResponseProps
 }
 
-interface UploadAPIResponseProps {
-    message: string,
+interface UploadAPIResponseProps extends ResponseWithMessageProps {
     filePath: string
 }
 interface MovieRequestData {

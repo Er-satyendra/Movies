@@ -1,5 +1,4 @@
-interface ErrorProps {
-    message: string
+interface ErrorProps extends ResponseWithMessageProps {
     response: {
         data: string | Record<string, string>
     }
@@ -21,5 +20,5 @@ interface APIProps<T> {
 }
 
 interface ResponseWithMessageProps {
-    message: string
+    message: string,
 }

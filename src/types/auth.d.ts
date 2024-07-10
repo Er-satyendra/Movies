@@ -11,8 +11,7 @@ interface RegistrationProps {
     rememberMe: boolean
 }
 
-interface AuthResponseProps {
-    message: string,
+interface AuthResponseProps extends ResponseWithMessageProps {
     user: {
         id: number,
         name: string,
