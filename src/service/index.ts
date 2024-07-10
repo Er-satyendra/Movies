@@ -45,15 +45,13 @@ axiosInstance.interceptors.response.use(
     },
 )
 
-
-
-const mainApiService = async <T, R>({
+const mainApiService = async <T, R extends ResponseWithMessageProps>({
     url,
     method,
     data,
     showAlert,
     headers
-}: APIProps<T>) => {
+}: APIProps<T>) : Promise<false | R>=> {
     store.dispatch(setLoader(true))
     try {
         const result: R = await axiosInstance({
@@ -63,9 +61,8 @@ const mainApiService = async <T, R>({
             headers,
         });
         store.dispatch(setLoader(false))
-        const response = { ...result } as Record<string, string>
-        if (response?.message && showAlert) {
-            showAlertMsg(response?.message, 'success')
+        if (result?.message && showAlert) {
+            showAlertMsg(result?.message, 'success')
         }
         return result;
     } catch (axiosError) {
